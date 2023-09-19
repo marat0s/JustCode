@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+func main() {
+	slice1 := []int{1, 2, 3, 4, 5}
+	slice2 := []int{5, 4, 3, 2, 6}
+	fmt.Println(compareSlices(slice1, slice2))
+}
+
 func compareSlices(slice1 []int, slice2 []int) bool {
 	if len(slice1) != len(slice2) {
 		return false
@@ -23,13 +29,5 @@ func compareSlices(slice1 []int, slice2 []int) bool {
 			return false
 		}
 	}
-
 	return true
-}
-
-func main() {
-	slice1 := []int{1, 2, 3, 4, 5}
-	slice2 := []int{5, 4, 3, 2, 6}
-
-	fmt.Println(compareSlices(slice1, slice2))
 }
