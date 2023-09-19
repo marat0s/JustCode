@@ -5,6 +5,11 @@ import (
 	"strings"
 )
 
+func main() {
+	str := []string{"dog", "racecar", "car"}
+	fmt.Println(longestCommonPrefix(str))
+}
+
 func longestCommonPrefix(str []string) string {
 	if len(str) == 0 {
 		return ""
@@ -19,9 +24,4 @@ func longestCommonPrefix(str []string) string {
 		}
 	}
 	return prefix
-}
-
-func main() {
-	str := []string{"dog", "racecar", "car"}
-	fmt.Println(longestCommonPrefix(str))
 }
